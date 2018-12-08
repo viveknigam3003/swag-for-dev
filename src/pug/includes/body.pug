@@ -18,7 +18,7 @@ include ./fork.pug
                         label.sr-only(for="filter") Filter opportunity difficulty
                         select#filter
                             for filter in ['All difficulties', 'Easy', 'Medium', 'Hard']
-                                option(value=filter.replace(/ /g, '').toLowerCase()) #{filter}
+                                option(value=filter.split(' ')[0].toLowerCase()) #{filter}
 
                 .item.flex
                     span In
